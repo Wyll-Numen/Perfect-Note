@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Note</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+    const musicos = [
+      { nome: "William", instrumento: "Guitarra" },
+      { nome: "Neri", instrumento: "Baixo" },
+      { nome: "Mikael", instrumento: "Violão" },
+      { nome: "Becker", instrumento: "Bateria" }
+    ];
+    // Desafio 1: mostrar dinamicamento com JS as musicas e escalas
+    const musicas = [];
+    const escalas = [];
+    
+      function mostrarMusicos(){
+        // Remove todas as <li>
+        document.querySelector(".lista-musicos ul").innerHTML = "";
+
+        // Cria uma <li> para cada registro dentro de musicos
+        musicos.forEach(function(musico){
+          // <li></li>
+          const elemento = document.createElement("li");
+          // <li>TESTE</li>
+          elemento.innerHTML = musico.nome + " - " + musico.instrumento
+          // Adiciona elemento no DOM
+          document.querySelector(".lista-musicos ul").appendChild(elemento)
+        })
+      }
+
+    function iniciar(){
+      mostrarMusicos()
+
+      document.getElementById('novo-musico').addEventListener('submit', function(e){
+        e.preventDefault();
+        const nome = document.querySelector('input[name="nome"]').value
+        const instrumento = document.querySelector('input[name="instrumento"]').value
+        // adicionar na lista de musicos existente
+        musicos.push({
+          nome: nome,
+          instrumento: instrumento
+        })
+        
+        mostrarMusicos();
+      })
+
+    }
+
+    window.onload = function () {
+      iniciar()
+    }
+    </script>
+  </head>
+  <body class="index" onread>
+    <h1>Perfect Note</h1>
+
+    <div class="main-menu">
+      <a href="./escalas.html"><h2>Escalas</h2></a>
+      <a href="./repertorio.html"><h2>Repertório</h2></a>
+      <a href="./musicos.html"><h2>Músicos</h2></a>
+    </div>
+
+    <main style="display: flex; flex-direction: row; ">
+      <div class="lista-musicos">
+        <h2>Músicos</h2>
+     
+        <ul>
+        </ul>
+
+        <form action="#" id="novo-musico" style="background: #ccc; padding: 6px;">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" />
+          <br>
+          
+          <label for="instrumento">Instrumento:</label>
+          <input type="text" name="instrumento" />
+
+          <br>
+
+          <button type="submit" style="background-color: #888; cursor: pointer; padding: 8px; border: 0; color: white;">Adicionar</button>
+        </form>
+      </div>
+      <div class="cancoes">
+        <h2>Canções</h2>
+
+        <ul>
+          <li>Ousado amor (G)</li>
+          <li>Primeiro amor (D)</li>
+          <li>Verdadeiro amor (C)</li>
+        </ul>
+      </div>
+      <div class="escalas-ativas">
+        <h2>Escalas Ativas</h2>
+
+        <ul>
+          <li>01/01/2024 - Domingo</li>
+          <li>01/02/2024 - Domingo</li>
+          <li>01/03/2024 - Domingo</li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="rodape"><footer></footer></div>
+  </body>
+</html>

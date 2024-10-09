@@ -52,11 +52,11 @@ a p:hover {
 }
 
 * h2 {
-  width: 200px;
+  width: 260px;
   text-align: center;
   font-family: monospace;
   color: black;
-  font-size: 3em;
+  font-size: 5em;
   border-radius: 30px;
 }
 
@@ -88,8 +88,8 @@ a p:hover {
 
 * h2:hover {
   color: rgb(253, 217, 169);
-  transition: 0.8s;
-  font-size: 4em;
+  transition: 0.3s;
+  font-size: 6em;
 }
 
 #menu {
@@ -110,28 +110,139 @@ a p:hover {
 }
 
 #adicionar-cancoes {
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(0, 255, 102, 0.328);
   padding: 50px;
   border-radius: 50px;
+ 
 }
 
 #escalas-ativas {
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(0, 255, 153, 0.352);
   padding: 50px;
   border-radius: 50px;
 }
 
 #adicionar-musicos {
-  background-color: rgba(255, 255, 255, 0.115);
+  background-color: rgba(0, 255, 153, 0.352);
   padding: 50px;
   border-radius: 50px;
-  width: 500px;
-}
-
-#repertorio-atual p {
-  display: inline-block;
-  justify-content: space-between;
   width: 400px;
-  align-content: center;
+  float: right;
+  margin: 10px; 
+
 }
 
+#repertorio-atual a {
+  padding: 0px;
+  color: black;
+}
+
+#repertorio-atual a:hover{
+  color: rgb(0, 255, 136);
+  transition: 0.4s;
+}
+
+
+
+#repertorio-atual h3 {
+  text-align: center;
+  width: auto;
+}
+
+#visao-geral-grupo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#visao-geral-grupo h2{
+  font-size: 3em;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+  padding: 5px; 
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+input {
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+}
+
+#escalas h2{
+  width: 400px;
+}
+
+#escalas {
+  background-color: rgba(0, 255, 153, 0.352);
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+}
+
+#musicos h2{
+  width: 400px;
+}
+
+#musicos {
+  background-color: aquamarine;
+  padding: 30px;
+  background-color: rgba(0, 255, 153, 0.352);
+  border-radius: 20px;
+  width: 400px;
+}
+
+#cancoes-jovens-domingo {
+  background-color: aquamarine;
+  padding: 30px;
+  background-color: rgba(0, 255, 153, 0.352);
+  border-radius: 20px;
+  width: 400px;
+  text-align: center;
+  height: 400px;
+}
+
+#cancoes-jovens-domingo h2{
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+
+#cancoes-jovens-domingo li {
+  list-style: none;
+  text-align: start;
+  margin-left: 95px;
+}
+
+#cancoes-jovens-domingo h3{
+  font-size: 2em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#musicos-cadastrados {
+  background-color: rgba(0, 255, 153, 0.352);
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 200px;
+
+}
+
+#repertorio-atual {
+  background-color: rgba(0, 255, 153, 0.352);
+  padding: 30px;
+  width: 800px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+#repertorio-atual-tipo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}

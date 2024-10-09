@@ -14,8 +14,10 @@
 
         <div id="repertorio-atual">
             <h3>Repertório Atual</h3>
-            <p>Congregacionais</p>
-            <p>Culto Jovens</p>
+            <div id="repertorio-atual-tipo">
+                <p><a href="#">Congregacionais</a></p>
+                <p><a href="#">Culto Jovens</a></p>
+            </div>
         </div>
 
 
@@ -23,9 +25,51 @@
             <h3>Adicionar Canções</h3>
 
                 <p>Nome:<input type="Música"></p>
+
                 <p>Artista:<input type="Artista"></p>
-                <p>Tipo:</p>
-                <p>Levada:</p>
+
+            </select></p>
+            <p><label for="tonalidade">Tonalidade:</label>
+                <select id="tonalidade" name="tonalidae">
+                    <option value="C">C (Dó Maior)</option>
+        <option value="C#">C# (Dó Sustenido Maior)</option>
+        <option value="D">D (Ré Maior)</option>
+        <option value="D#">D# (Ré Sustenido Maior)</option>
+        <option value="E">E (Mi Maior)</option>
+        <option value="F">F (Fá Maior)</option>
+        <option value="F#">F# (Fá Sustenido Maior)</option>
+        <option value="G">G (Sol Maior)</option>
+        <option value="G#">G# (Sol Sustenido Maior)</option>
+        <option value="A">A (Lá Maior)</option>
+        <option value="A#">A# (Lá Sustenido Maior)</option>
+        <option value="B">B (Si Maior)</option>
+
+        <option value="Cm">Cm (Dó Menor)</option>
+        <option value="C#m">C#m (Dó Sustenido Menor)</option>
+        <option value="Dm">Dm (Ré Menor)</option>
+        <option value="D#m">D#m (Ré Sustenido Menor)</option>
+        <option value="Em">Em (Mi Menor)</option>
+        <option value="Fm">Fm (Fá Menor)</option>
+        <option value="F#m">F#m (Fá Sustenido Menor)</option>
+        <option value="Gm">Gm (Sol Menor)</option>
+        <option value="G#m">G#m (Sol Sustenido Menor)</option>
+        <option value="Am">Am (Lá Menor)</option>
+        <option value="A#m">A#m (Lá Sustenido Menor)</option>
+        <option value="Bm">Bm (Si Menor)</option>
+                </select></p>
+
+                <p><label for="tipo-musica">Tipo:</label>
+                    <select id="tipo-musica" name="tipo-musica">
+                        <option value="congregacional">Congregacional</option>
+                        <option value="culto-jovens">Culto Jovens</option>
+                        
+                    </select></p>
+                <p><label for="levada">Levada:</label>
+                    <select id="levada" name="levada">
+                        <option value="rapida">Rápida</option>
+                        <option value="intermediaria">Intermediária</option>
+                        <option value="lenta">Lenta</option>
+                    </select></p>
                 
 
                 <p><input type="submit" value="Gravar"></p>

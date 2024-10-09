@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escalas</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body class="index-escalas">
     <h1>Escalas</h1>
@@ -18,9 +19,19 @@
         <h3>Criar Escala</h3>
         <form action="">
           <p>Data:<input type="Música" /></p>
+
           <p>Músico:<input type="Artista" /></p>
-          <p>Canção:</p>
-          <p>Levada:</p>
+
+          <p><label for="cancao">Canção:</label>
+            <select id="cancao" name="cancao">
+                <option value="cancao"></option>
+            </select></p>
+
+          <p><p><label for="Levada">Levada:</label>
+            <select id="levada" name=levada">
+                <option value="levada"></option>
+            </select></p></p>
+            
           <p><input type="submit" value="Gravar" /></p>
         </form>
       </div>
